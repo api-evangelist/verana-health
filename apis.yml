@@ -1,8 +1,29 @@
 aid: verana-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/verana-health.png
 name: Verana Health
-description: 'Verana Health is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Verana Health is a healthcare real-world data (RWD) and analytics company
+  that transforms de-identified electronic health records from more than 90 million
+  patients across 50+ EHR systems into curated, disease-specific datasets for life
+  sciences and clinical research. Its VeraQ population health data engine harmonizes,
+  tokenizes, and links structured and unstructured EHR data, claims, and medical images
+  using clinician-directed curation, natural language processing, and machine learning,
+  delivering Qdata modules across ophthalmology, urology, and neurology. Verana partners
+  with medical specialty societies (including the AAO IRIS Registry) to power trial
+  design, site and patient identification, real-world evidence studies, and quality-measure
+  reporting. The company is HIPAA-compliant and surfaced in the API Evangelist network
+  as a portfolio company of GV. No public developer API or developer portal is published
+  as of this profile.'
 url: https://raw.githubusercontent.com/api-evangelist/verana-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Life Sciences
+- Healthcare
+- Real-World Data
+- Clinical Research
+- Data Analytics
+- Ophthalmology
+- HIPAA
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/verana-health-domain-security.yml
 - type: Website
   url: http://veranahealth.com
+- type: Blog
+  url: https://veranahealth.com/blog/
+- type: PrivacyPolicy
+  url: https://veranahealth.com/patient-privacy/
+- type: Compliance
+  url: https://veranahealth.com/patient-privacy/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
